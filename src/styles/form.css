@@ -1,0 +1,310 @@
+main {
+    padding: 30px 30px 10px;
+}
+
+.add-ingredient-form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    height: 38px;
+}
+
+.add-ingredient-form > input {
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    padding: 9px 13px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 600px;
+}
+
+.add-ingredient-form > button {
+    font-family: Inter, sans-serif;
+    border-radius: 6px;
+    border: none;
+    background-color: #2056f7;
+    color: #FAFAF8;
+    width: 300px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.add-ingredient-form > button::before {
+    content: "+";
+    margin-right: 5px;
+}
+
+
+.ingredients-recipe-con{
+    margin: 0 19rem;
+}
+
+
+.ingredients-recipe-con h2{
+    padding: 1rem 0 0 0;
+    margin-bottom: 0;
+
+}
+
+.ingredients-recipe-con ul{
+    margin-top: 0.4rem;
+    line-height: 28px;
+}
+
+.delete-btn{
+    color: red;
+    font-weight: 400;
+    font-size: 10px;
+    background-color: white;
+    border: none;
+    margin-left: 3px;
+    vertical-align: super;
+    cursor: pointer;
+}
+
+input, button {
+    position: relative;
+  }
+
+
+.get-recipe-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: #F0EFEB;
+    padding: 10px 28px;
+    margin-top: 3rem;
+}
+
+.get-recipe-container h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.get-recipe-container p {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 20px;
+}
+
+.get-recipe-container button {
+    border: none;
+    border-radius: 6px;
+    background: #2056f7;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: #FAFAF8;
+    width: 300px;
+    padding: 15px;
+    font-family: Inter, sans-serif;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.suggested-recipe-container {
+    line-height: 28px;
+    font-size: 1rem;
+    margin: 4rem 19rem;
+}
+
+.suggested-recipe-container h2{
+    font-size: 2rem;
+    color: #2056f7;
+    font-weight: 600;
+    margin-top: 4rem;
+}
+
+.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+    margin-bottom: 8px;
+}
+
+/* Desktop*/
+
+@media screen and (min-width: 1281px) {
+    .add-ingredient-form > input {
+      width: 770px;
+    }
+  }
+
+@media screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1024px) {
+    .add-ingredient-form > input {
+        min-width: 400px;
+    }
+}
+
+/* Nest Hub Max */
+@media screen and (orientation: landscape) and (min-width: 1280px) and (max-width: 1280px) {
+    .add-ingredient-form > input {
+        min-width: 770px;
+    }
+     .get-recipe-container{
+        min-width: 1090px;
+    }
+}
+
+/* Tablet */
+
+@media screen and (orientation: landscape) and (min-width: 600px) and (max-width: 1400px) {
+    .add-ingredient-form > input {
+        max-width: 450px;
+        margin-left: 40px;  
+    }
+
+    .get-recipe-container{
+        width: 780px;
+    }
+    .ingredients-recipe-con, .suggested-recipe-container{
+        margin: 10px 0 0 120px;
+        max-width: 800px;
+    }
+    .suggested-recipe-container {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1100px) and (max-width: 1400px) {
+    .add-ingredient-form > input {
+        min-width: 800px;
+        margin-left: 40px;  
+    }
+
+    .get-recipe-container{
+        width: 1120px;
+    }
+}
+
+
+/*  */
+@media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 1280px) {
+    .add-ingredient-form > input {
+        max-width: 400px;
+        
+    }
+    }
+
+
+@media screen and (orientation: portrait) and (min-width: 820px) and (max-width: 1180px) {
+    .ingredients-recipe-con, .suggested-recipe-container{
+        margin: 10px 70px;
+    }
+    .suggested-recipe-container {
+        font-size: 1rem;
+    }
+    .get-recipe-container button {
+        width: 200px;
+    }
+   
+    .add-ingredient-form > button {
+        width: 200px;
+    }
+    }
+
+@media screen and (orientation: landscape) and (min-width: 820px) and (max-width: 1280px) {
+    .ingredients-recipe-con, .suggested-recipe-container{
+        margin: 10px 70px;
+        max-width: 600px;
+    }
+    .get-recipe-container {
+        max-width: 1020px;
+    }
+    .add-ingredient-form > button {
+        width: 200px;
+    }
+}
+    
+
+/* Mobile */
+@media screen and (orientation: portrait) and (max-width: 800px) {
+    
+    .add-ingredient-form > input {
+        width: 500px;
+        margin-left: 20px;
+
+    }
+    .add-ingredient-form > button {
+        width: 500px;
+        margin-right: 20px;
+
+    }
+    .ingredients-recipe-con, .suggested-recipe-container{
+        margin: 10px 20px;
+    }
+    .suggested-recipe-container {
+        font-size: 1rem;
+    }
+    .get-recipe-container{
+        display: block;
+    }
+    .get-recipe-container button {
+        width: 200px;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1000px){
+    .add-ingredient-form > input {
+        max-width: 450px;
+    }
+    .ingredients-recipe-con, .suggested-recipe-container{
+        margin: 10px 59px;
+    }
+    .suggested-recipe-container {
+        font-size: 1rem;
+    }
+    .get-recipe-container{
+        display: flex;
+    }
+    .get-recipe-container button {
+        width: 200px;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 897px){
+    .add-ingredient-form > input {
+        width: 350px;
+    }
+    
+    .get-recipe-container button {
+        width: 150px;
+        margin-top: 30px;
+    }
+    .add-ingredient-form > button {
+        width: 200px;
+    }
+}
+
+
+
+@media screen and (orientation: landscape) and (max-width: 740px){
+    .add-ingredient-form > input {
+        max-width: 340px;
+    }
+    .get-recipe-container {
+        min-width: 560px;
+        
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 720px){
+    .add-ingredient-form > input {
+        max-width: 340px;
+    }
+    .get-recipe-container {
+        max-width: 560px;
+        
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 667px){
+    .add-ingredient-form > input {
+        max-width: 280px;
+    }
+    .get-recipe-container {
+        min-width: 500px;
+        
+    }
+}
+

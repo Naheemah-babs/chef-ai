@@ -14,6 +14,7 @@ export default function IngredientsList(props) {
     return (
         <section className='ingredients-recipe-con'>
             <h2 className='.ingredient-h2'>Ingredients on hand:</h2>
+            <p>Please add up to 4 ingredients</p>
             <ul className="ingredients-list" aria-live="polite">{ingredientsListItems}</ul>
 
             {props.ingredients.length > 3 && <div className="get-recipe-container">
